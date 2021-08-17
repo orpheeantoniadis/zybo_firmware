@@ -1,0 +1,17 @@
+{
+    "author" : {
+        "name"  : "Orphee Antoniadis",
+        "email" : "<orphee.antoniadis@hesge.ch>"
+    },
+    "project" : {
+        "name"            : "zybo_pcam5c_zynqps",
+        "type"            : "COMP_PRJ_TYPE",
+        "category"        : "SOC",
+        "vivado_version"  : "2020.2",
+        "target_language" : "VHDL"
+    },
+    "hardware" : {
+        "part_name"  : "xc7z020clg400-1",
+        "board_name" : "digilentinc.com:zybo-z7-20:part0:1.0"
+    }
+}

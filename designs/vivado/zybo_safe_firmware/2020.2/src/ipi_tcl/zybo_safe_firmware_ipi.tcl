@@ -1,0 +1,1 @@
+source "../../../../../../soc/vivado/zybo_safe_firmware_zynqps/2020.2/src/ipi_tcl/zybo_safe_firmware_zynqps_ipi.tcl"

@@ -1,0 +1,8 @@
+# Ignore generated files
+zybo_pcam5c.xsa
+zybo_pcam5c.bit
+drivers
+*.c
+*.h
+*.tcl
+*.html

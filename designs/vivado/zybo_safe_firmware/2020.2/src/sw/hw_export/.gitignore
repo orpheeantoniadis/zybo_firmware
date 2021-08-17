@@ -1,0 +1,8 @@
+# Ignore generated files
+zybo_safe_firmware.xsa
+zybo_safe_firmware.bit
+drivers
+*.c
+*.h
+*.tcl
+*.html

@@ -1,0 +1,16 @@
+# Ignore IP generated files
+*/*.dcp
+*/*.v*
+*/*.xml
+*/*.xdc
+*/src/
+*/sim/
+*/synth/
+*/doc/
+*/hdl/
+*/simulation/
+*/demo_tb/
+*/documentation/
+*/tcl/
+*/constraints/
+*/misc/

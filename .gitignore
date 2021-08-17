@@ -1,0 +1,163 @@
+#########################################################################################################
+##	This is an example .gitignore file for Vivado, please treat it as an example as 
+##	it might not be complete. In addition, XAPP 1165 should be followed.
+#########################################################################################################
+#########
+#Exclude all
+#########
+*
+!*/
+!.gitignore
+###########################################################################
+##	VIVADO
+###########################################################################
+#########
+#Source files:
+#########
+#Do NOT ignore VHDL, Verilog, block diagrams or EDIF files.
+!*.vhd
+!*.v
+!*.bd
+!*.edif
+#########
+#IP files
+#########
+#.xci: synthesis and implemented not possible - you need to return back to the previous version to generate output products
+#.xci + .dcp: implementation possible but not re-synthesis
+#*.xci(www.spiritconsortium.org)
+!*.xci
+#*.dcp(checkpoint files)
+!*.dcp
+!*.vds
+!*.pb
+#All bd comments and layout coordinates are stored within .ui
+!*.ui
+!*.ooc
+#########
+#System Generator
+#########
+!*.mdl
+!*.slx
+!*.bxml
+#########
+#Simulation logic analyzer
+#########
+!*.wcfg
+!*.coe
+#########
+#MIG
+#########
+!*.prj
+!*.mem
+#########
+#Project files
+#########
+#XPR  +  *.XML ? XPR (Files are merged into a single XPR file for 2014.1 version)
+#Do NOT ignore *.xpr files
+!*.xpr
+#Include *.xml files for 2013.4 or earlier version
+!*.xml
+#########
+#Constraint files
+#########
+#Do NOT ignore *.xdc files
+!*.xdc
+#########
+#TCL - files
+#########
+!*.tcl
+#########
+#Journal - files
+#########
+!*.jou
+#########
+#Reports
+#########
+!*.rpt
+!*.txt
+!*.vdi
+#########
+#C-files
+#########
+!*.c
+!*.h
+!*.elf
+!*.bmm
+!*.xmp
+##############
+#Bash - files
+##############
+!*.sh
+##############
+#JSON - files
+##############
+!*.json
+################
+# Vivado folders
+################
+designs/vivado/scalp_firmware/2020.2/lin64/.scripts/scalp_zynqps/
+designs/vivado/scalp_firmware/2020.2/lin64/scalp_firmware/
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel.dcp
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel.xml
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel/
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel_clocks.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel_core.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel_ooc.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel_sim_netlist.v
+ips/hw/scalp_aurora_phy/src/ip_core/east_channel/east_channel_stub.v
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel.dcp
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel.xml
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel/
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel_clocks.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel_core.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel_ooc.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel_sim_netlist.v
+ips/hw/scalp_aurora_phy/src/ip_core/north_channel/north_channel_stub.v
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel.dcp
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel.xml
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel/
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel_clocks.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel_core.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel_ooc.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel_sim_netlist.v
+ips/hw/scalp_aurora_phy/src/ip_core/south_channel/south_channel_stub.v
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel.dcp
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel.xml
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel/
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel_clocks.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel_core.vhd
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel_ooc.xdc
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel_sim_netlist.v
+ips/hw/scalp_aurora_phy/src/ip_core/west_channel/west_channel_stub.v
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/axis_data_fifo.dcp
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/axis_data_fifo.xml
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/axis_data_fifo_ooc.xdc
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/axis_data_fifo_sim_netlist.v
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/axis_data_fifo_stub.v
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/hdl/
+ips/hw/scalp_aurora_phy_rx_fifo/src/ip_core/axis_data_fifo/synth/
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk.dcp
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk.v
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk.xdc
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk.xml
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk_board.xdc
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk_clk_wiz.v
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk_ooc.xdc
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk_sim_netlist.v
+ips/hw/scalp_design_aurora_clk/src/ip_core/scalp_aurora_clk/scalp_aurora_clk_stub.v
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/hdl/
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/synth/
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl.dcp
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl.xdc
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl.xml
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl_ooc.xdc
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl_sim_netlist.v
+ips/hw/scalp_design_debug/src/ip_core/vio_axi_cnt_ctrl/vio_axi_cnt_ctrl_stub.v
